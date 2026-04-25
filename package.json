@@ -1,0 +1,39 @@
+{
+  "name": "verimedia-ai",
+  "version": "1.0.0",
+  "description": "AI-powered media content protection, detection & DMCA enforcement platform",
+  "main": "backend/src/server.js",
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "dev": "nodemon backend/src/server.js",
+    "build": "echo 'Frontend is static — no build step required'",
+    "test": "jest --passWithNoTests",
+    "lint": "eslint backend/src --ext .js"
+  },
+  "keywords": [
+    "dmca", "content-protection", "deepfake-detection",
+    "media-authentication", "copyright", "ai", "anthropic"
+  ],
+  "author": "VeriMedia Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "multer": "^1.4.5-lts.1",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "uuid": "^9.0.0",
+    "@anthropic-ai/sdk": "^0.24.3",
+    "compression": "^1.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "eslint": "^8.55.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
